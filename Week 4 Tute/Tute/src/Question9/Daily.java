@@ -3,6 +3,7 @@ package Question9;
 public class Daily extends Appointment{
 
     public Daily(String n, int year, int month, int day){
+
         super(n, year, month, day);
     }
 
