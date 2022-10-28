@@ -24,7 +24,6 @@ public class main {
         while (run) {
             System.out.println("""
                 Choose the appointment category from below options
-                A : ascendingOrder
                 O : Onetime appointment
                 D : Daily appointment
                 M : Monthly appointment
@@ -34,7 +33,6 @@ public class main {
                 """);
 
             switch (input.next().toUpperCase().charAt(0)){
-                case 'A' -> ascendingOrder(onetime, daily, monthly);
                 case 'O' -> addOneTime(onetime);
                 case 'D' -> addDaily(daily);
                 case 'M' -> addMonthly(monthly);
@@ -48,6 +46,7 @@ public class main {
 
     public static void ascendingOrder(Onetime[] onetime, Daily[] daily, Monthly[] monthly){
 
+        System.out.println("-------------------------------------------------------------------------");
         ArrayList<Integer> list = new ArrayList<>();
 
         for (int i = 0; i < onetime.length; i++){
@@ -154,6 +153,9 @@ public class main {
             monthly[i].displayAll();
         }
 
+        System.out.println("AscendingOrder: \n");
+
+        ascendingOrder(onetime, daily, monthly);
     }
 
     public static void addOneTime(Onetime[] onetime){
