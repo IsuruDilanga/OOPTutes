@@ -1,0 +1,1 @@
+FROM FILEWRITE Student Name: aaaa Student ID: 12 Student Mark: 1FROM FILEWRITE Student Name: aaa Student ID: 12 Student Mark: 1
